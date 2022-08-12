@@ -23,7 +23,7 @@ client.connect(err => {
     // console.log("error",err);
   const productCollection = client.db("jersey").collection("products");
   const orderCollection = client.db("jersey").collection("orders");
-  // console.log("database connected successfully");
+  console.log("database connected successfully");
 
   app.post('/addCart', (req, res) =>{
     const newCart = req.body;
